@@ -111,7 +111,7 @@
         /* --- 네이버 검색창 구현 --- */
         .naver-search-container {
             text-align: center;
-            margin: 35px 0 25px 0;
+            margin: 35px 0 20px 0; /* 아래쪽 여백 살짝 줄임 (안내문구와 가까워지도록) */
             padding: 0 10px;
         }
         .naver-search-box {
@@ -155,6 +155,23 @@
             letter-spacing: -0.3px;
         }
 
+        /* --- [신규 추가] 갤러리 클릭 유도 문구 스타일 --- */
+        .gallery-guide-text {
+            text-align: center;
+            margin: 10px 0 25px 0;
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.5;
+            background-color: rgba(12, 26, 52, 0.03); /* 아주 연한 배경으로 구분감 */
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .gallery-guide-text b {
+            color: #0C1A34;
+            font-weight: 700;
+            border-bottom: 2px solid #CBA135; /* 골드 밑줄 강조 */
+        }
+
         /* --- 3. 갤러리 --- */
         .section-title {
             font-family: 'Noto Serif KR', serif;
@@ -170,7 +187,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
-            margin-top: 25px;
+            margin-top: 15px;
         }
         
         .thumbnail-link {
@@ -477,6 +494,12 @@
                     <span class="search-icon">🔍</span>
                 </div>
                 <p class="guide-text">▲ 검색을 통해서도 더 많은 풀이를 확인하실 수 있습니다.</p>
+            </div>
+
+            <!-- [신규 추가] 클릭 유도 문구 -->
+            <div class="gallery-guide-text">
+                👇 아래 문제 번호를 눌러,<br>
+                <b>한줄 풀이</b>를 블로그에서 확인해주세요!
             </div>
 
             <!-- 2026 수능 최신 풀이 갤러리 -->
